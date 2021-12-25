@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy tutorials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,500&family=Pushster&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/logo.png" alt="This is a Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="course.html">COURSE</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>
+            Our Courses </h1>
+    </section>
+
+    <!------------------Course-------------->
+
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            It’s not about perfect. It’s about effort.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>
+                    Excellence is not a skill. It is an attitude.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>
+                    Focus on your goal. Don’t look in any direction but ahead.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>
+                    You don’t get what you wish for. You get what you work for.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!------------------Facilities-------------->
+
+    <section class="facilities">
+        <h1>
+            Our Facilities
+        </h1>
+        <p>
+            Don’t try to be perfect. Just try to be better than you were yesterday.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="Images/library.png" alt="Library pic">
+                <h3>
+                    World Class Library
+                </h3>
+                <p>
+                    I have always imagined that Paradise will be a kind of a Library.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Images/basketball.png" alt="Basketball pic">
+                <h3>
+                    Largest Playground
+                </h3>
+                <p>
+                    Talent wins games, but teamwork and intelligence wins championships.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="Images/cafeteria.png" alt="Cafeteria pic">
+                <h3>
+                    Tasty and Healthy Food
+                </h3>
+                <p>
+                    Keep going. Everything you need will come to you at the perfect time.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!------------------Footer-------------->
+
+
+    <section class="footer">
+        <h4>
+            About Us
+        </h4>
+        <p>
+            You can’t use up creativity. The more you use, the more you have.
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>
+            Made with <i class="fa fa-heart-o"></i> by Nammi & Sri
+        </p>
+    </section>
+
+    <!------Javascript for toggle menu ----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
